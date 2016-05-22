@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>스티커 메모</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script src="../js/lib/keymaster.js"></script>
+	<script src="../js/utility/Utility.js"></script>
+
+	<script>
+		const VocabularyWindow = require(__dirname + '/../js/view/VocabularyWindow');
+		(function() {
+			document.addEventListener("DOMContentLoaded", function() {
+				var vocabWindow = new VocabularyWindow(window, document);
+			});
+		})();
+	</script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<a id="prev" class="button" title="Next"><i class="icon ion-chevron-left"></i></a>
+			<a id="next" class="button" title="Previous"><i class="icon ion-chevron-right"></i></a>
+			<a id="checkmark" class="button" title="I got this"><i class="icon ion-checkmark"></i></a>
+
+			<div id="index-display">
+				<span id="current-count">0</span>
+				<span class="divider">/</span>
+				<span id="total-count">0</span>
+			</div><!-- // #index-display -->
+
+			<a id="pin" class="button"><i class="icon ion-pin"></i></a>
+		</div><!-- // #header -->
+
+		<div id="dictionary">
+			<span class="word">Loading</span>
+			<span class="definition">...</span>
+			<input type="hidden" id="wordId" />
+		</div><!-- // #dictionary -->
+	</div>
+</body>
+</html>
