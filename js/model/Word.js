@@ -18,7 +18,7 @@ Word.fetchNotMemorized = function(callback) {
 Word.markAsMemorized = function(_id) {
 	console.log("memorizedAsMarked(" + _id + ")");
 
-	db.update({ _id: _id }, { memorized: true }, {}, function(err, numReplaced) {
+	db.update({ _id: _id }, { $set: { memorized: true } }, {}, function(err, numReplaced) {
 		console.log("numReplaced: " + numReplaced);
 	});
 };
