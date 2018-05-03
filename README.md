@@ -1,5 +1,5 @@
 # varmy-desktop
-Varmy is a web, desktop &amp; mobile app to help you memorize vocabularies. The app is written in Node.js using Electron.js. 
+Varmy is a desktop application to help you memorize vocabularies. The app is written in Node.js using Electron.js. 
 
 
 ![varmy_desktop_03](https://user-images.githubusercontent.com/1064036/39588939-b413cc7c-4eb1-11e8-9258-03b110e23514.png)
